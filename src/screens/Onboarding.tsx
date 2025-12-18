@@ -7,10 +7,10 @@ type Props = NativeStackScreenProps<RootStackParamList, 'Onboarding'>;
 
 const { width, height } = Dimensions.get('window');
 
-const slides = [
-  require('../../assets/onboard-1.png'),
-  require('../../assets/onboard-2.png'),
-  require('../../assets/onboard-3.png'),
+const slides: number[] = [
+  // require('../../assets/onboard-1.png'),
+  // require('../../assets/onboard-2.png'),
+  // require('../../assets/onboard-3.png'),
 ];
 
 const Onboarding: React.FC<Props> = ({ navigation }) => {
@@ -24,7 +24,7 @@ const Onboarding: React.FC<Props> = ({ navigation }) => {
       >
         {slides.map((s, i) => (
           <View key={String(i)} style={[styles.slide, { width }]}>
-            <Image source={s} style={styles.image} resizeMode="cover" />
+            <Text style={{color: '#fff'}}>Onboarding Slide {i+1}</Text>
           </View>
         ))}
       </ScrollView>
