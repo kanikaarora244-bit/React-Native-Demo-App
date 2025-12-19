@@ -118,7 +118,7 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file('../../../apk.jks')
+            storeFile file('../../apk.jks')
             storePassword 'qwerty'
             keyAlias 'key0'
             keyPassword 'qwerty'
@@ -191,3 +191,4 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"

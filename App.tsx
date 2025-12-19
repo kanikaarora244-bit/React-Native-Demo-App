@@ -11,16 +11,9 @@ const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
   return (
-    <SafeAreaProvider>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="#000000"
-      />
-
-      <NavigationContainer>
-      <RootStack/>
-      </NavigationContainer>
-    </SafeAreaProvider>
+    <NavigationContainer>
+    <RootStack/>
+    </NavigationContainer>
   );
 }
 
