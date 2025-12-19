@@ -25,7 +25,7 @@ type Nav = StackNavigationProp<RootStackParamList>;
 const getTokenIcon = (symbol: string) => {
   switch (symbol) {
     case 'ETH':
-      return 'currency-eth';
+      return 'ethereum';
     case 'USDC':
     case 'ESDC':
     case 'DAI':
@@ -319,6 +319,8 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: '#111827',
     marginRight: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   tokenTextBlock: {
     flex: 1,
